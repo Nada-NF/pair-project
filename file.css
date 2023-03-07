@@ -1,0 +1,60 @@
+
+button{
+    background :rgb(86, 177, 78);
+    color: #143d0e;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight:bolder ;
+    text-decoration: underline;
+}
+
+#third{
+    background:transparent;
+    color: #f8f7f3;
+    border-radius: 25px;
+    padding: 25px 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20pt;
+    font-weight:bolder ;
+    text-decoration: underline;
+}
+
+button:hover {
+    box-shadow: 0px 5px 10px rgb(59, 58, 58);
+    transform: translateY(-2px);
+}
+
+button.selected {
+    border:black solid 1px;
+    background-color: #f4f4f4;
+}
+
+body {
+
+    font-family: Helvetica;
+    font-size: 20px;
+    margin: 1px auto;
+    width: 300px;
+  }
+  
+  label {
+    vertical-align: middle;
+  }
+
+  #third{
+    margin-top:400px ;
+    position: right;
+  }
+
+  .btn-group button {
+    background-color:transparent; 
+    
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
