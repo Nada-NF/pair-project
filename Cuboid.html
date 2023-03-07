@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+
+
+html{
+    width: 500px;
+    height: 800px;
+    background: linear-gradient(rgb(18, 5, 15),rgb(203, 85, 6),gray);
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    overflow: scroll;
+}
+
+#first,#second,#thirdd{
+    background:#eed06e;
+    box-shadow: 0px 5px 10px rgb(59, 58, 58);
+    transform: translateY(-2px);
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+    
+h3,p,h5{
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+h4{
+    text-align: center;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+
+.column {
+    float: left;
+    width: 100%;
+    padding: -50px;
+    height: 0px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css" />
+    <script src="jquery-3.6.3.min.js"></script>
+</head>
+<body>
+
+    <div>
+    
+        <div id="calcul">
+    
+        <h1>Cuboid</h1> 
+
+
+        <p>l: <input id="first"></p>
+        <p>b: <input id="second"></p>
+        <p>h: <input id="thirdd"></p>
+
+        <div class="btn-group">
+            <button type="button" id="hello" onclick="addCuboid()">Calculator</button>
+        </div>
+
+    <div class="row">
+    <div class="column">
+     <img src="Cuboid.png" alt="Snow" style="width:300px; margin-left: -100px; margin-bottom: 10px;">
+    </div>
+    <div class="column" style="background-color:#bbb;">
+            <h4>if you push to calculator the function will be calculate all the function have relation with Cicle</H4>
+            <p>Perimeter = <input id="answer"></p>
+            <h5> P(cm) = 4 × (l + b + h) </h5>
+            <p>Volume = <input id="answer1"></p>
+            <h5> V(cm3) = 2 × ((l × h)+ (b × h) + (l × b))  </h5>
+            <p>Area = <input id="answer2"></p>
+            <h5>  A = l × b × h  </h5>
+    </div> 
+
+        <button type="button" id="third" ><a href='Calculator.html'>Other function</button>
+
+    <script src="main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.start {
+        text-align: justify;
+      }
+      h2,p{
+        text-align: center;
+        clear: both;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        top: 120%;
+        left: -65%;
+        font-weight: bold;
+        ;
+      }
+      h2{
+        text-align: center;
+        color:rgb(224, 250, 239) ;
+        text-shadow:0px 0px 7px rgb(209, 250, 248)   
+      }
+
+
+      a{
+        color:rgb(241, 238, 227) ;
+        text-shadow:0px 0px 7px rgb(209, 250, 248);
+        font-weight: bold;
+        font-size: 30px;
+      }
+      li::before {
+        color: rgb(26, 49, 47);
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      html{
+        background-image: url('back-ground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1{
+        color: rgb(224, 250, 239);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: normal;
+        margin: 1px;;
+        padding: 15px 0;
+        line-height: 1.5;
+        text-shadow: 0px 0px 7px rgb(209, 250, 248);
+        text-transform: uppercase;
+        padding: 60px;
+        font-size: 60px;
+      }
+      p{
+        color:rgb(224, 250, 239) ;
+        text-shadow:0px 0px 7px rgb(209, 250, 248) ;
+      }
+
+</style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css" />
+    <script src="jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+<div>
+    
+    <div class="start">
+
+    <h1>CALCULATOR</h1>
+    <h2>Choose the function you are looking for.</h2>
+     <p>List of function</p>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"></span>
+    
+    <ul id="myUL">
+      
+      <li ><a href="http://127.0.0.1:5501/Cercle.html">Cylinder</a></li>
+      <li><a href="http://127.0.0.1:5501/Cube.html">Cube</a></li>   
+      <li><a href="http://127.0.0.1:5501/Cuboid.html">Cuboid</a></li>
+      <li><a href="http://127.0.0.1:5501/Triangle.html">Triangle</a></li>
+      
+    </ul>
+
+ <button onclick="reset()">Reset</button>
+</div>   
+    <script src="main.js" ></script>
+</body>
+</html>
